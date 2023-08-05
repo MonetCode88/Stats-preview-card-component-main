@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    height: 50%;
+    width: 75%; 
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    /* height: 446px;
+    width: 540px; */
+    height: 100%;
+    width: 50%;
+}
+
+.cardimage  {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* height: 446px;
+    width: 540px; */
+    height: 100%;
+    width: 50%;
+    background: url(images/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(170, 92, 219, 0.5)
+}
+.stats {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cardinfo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rowbottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.stats div {
+    padding: 10px, 10px, 10px, 0px;
+}
+
+h1 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    width: 65%;
+    font-size: 2.8em;
+    margin-bottom: 0;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    width: 65%;
+    line-height: 1.6;
+    font-size: 1.4em;
+}
+
+
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-right: 63px;
+    font-size: 2.0em; 
+}
+
+/* span {
+    display: inline-block;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+} */
+
+#highlight {
+    color: hsl(277, 64%, 61%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.txtbottom {
+    color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend deca', sans-serif;
+        font-weight: 400;
+        font-size: .6em;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 440px){
+    .container {
+        flex-direction: column-reverse;
+        height: 85%;
+        width: 90%;
+        border-radius: 25px;
+    }
+
+    .cardinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+        width: 90%;
+    }
+
+        .cardinfo div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .cardimage {
+        height: 25%;
+        width: 90%;
+    }
+
+    h1 {
+        width: 80%;
+        font-size: 1.8em;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: normal;
+        
+    }
+
+    p {
+        width: 80%;
+        font-size: 1em;
+        text-align: center;
+        
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding: 0px;
+        margin: 0px;
+}
+
+.rowbottom {
+    width: 78px;
+    height: 92px;
+    text-align: center;
+}
+
+}
